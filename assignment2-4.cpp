@@ -4,9 +4,9 @@ using namespace std;
 int main()
 {
   //initialize all varaibles
-  float = regular_price = 59.95;
-  float = discount_amount = regular_price X 0.2;
-  float = sales_price = regular_price - discount_amount;
+  float regular_price = 59.95;
+  float discount_amount = regular_price * 0.2;
+  float sales_price = regular_price - discount_amount;
 
 
   //display 

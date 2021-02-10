@@ -20,8 +20,8 @@ int main()
   const int maxRand = 99;
   const int minRand = 0;
 
-  unsigned seed = time(0);  //sets a unique seed everytime the program runs
-
+  unsigned seed = time(0);  //has a unique seed that changes every second
+  
   //Roll randomized numbers and find sum
   srand(seed);  //randomized seed
   //equation to set the limit of the max and min range of the random number generation
@@ -31,7 +31,7 @@ int main()
 
   avg = (num1 + num2 + num3) / 3.0;
   //display results
-  cout << "The random numbers are: " << num1 + ", " << num2 + ", and " << num3 + ".\n";
+  cout << "The random numbers are: " << num1 << ", " << num2 << ", and " << num3 << ".\n";
   cout << "The average of the random numbers is: " << setprecision(2) << fixed << avg << endl;
 
   return 0; 

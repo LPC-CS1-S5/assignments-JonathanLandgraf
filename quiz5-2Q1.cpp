@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-  int num1, num2, num3, num4, num5;
+  int num1, num2, num3, num4, num5, min;
   srand(time(0));  
 
   num1 = rand() % 100;
@@ -17,9 +17,23 @@ int main()
 
   cout << "The random numbers generated are: " << num1 << ", " << num2 << ", " << num3 << ", " << num4 << ", and " << num5 << endl;
 
-
-
-
+  if (num1 > num2 || num1 == num2){
+    min = num1;
+  }
+  else {
+    min = num2;
+  }
+  if (min > num3){
+    min = num3;
+  }
+  if (min > num4){
+  min = num4;
+  }
+  if (min > num5){
+  min = num5;
+  }
+  
+  cout << "The minimum number is: " << min <<endl;
 
 
   return 0;

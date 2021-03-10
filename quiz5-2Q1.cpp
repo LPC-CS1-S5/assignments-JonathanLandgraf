@@ -15,6 +15,9 @@ int main()
 	//     if ( min > num)
 	//         ....
   // }
+
+  // Perfect!!
+  // :)
 cout << "The generated numbers are: ";
 for (int i=0; i < 5; i++) {
   num = rand() % 100;

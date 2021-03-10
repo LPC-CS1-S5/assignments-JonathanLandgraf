@@ -1,0 +1,4 @@
+1 JJ comp 505050
+20 JT vco 789542
+7 JB SS 0
+98562 Alpha zomp 18912

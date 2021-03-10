@@ -12,7 +12,7 @@ int main()
   string fileLine;
 
   ifs.open("employee.txt");
-  ifs (ifs.fail){
+  if (ifs.fail()){
     cerr << "File failed to open\n";
     exit(0);
   }

@@ -7,13 +7,15 @@ using namespace std;
 
 int main()
 {
-  ifstream ifs;
+  ofstream ofs;
   int n, ID;
   string name, dep;
   double salery;
 
-  ifs.open("employee.txt");
-  ifs (ifs.fail()) {
+
+
+  ofs.open("employee.txt");
+  if (ofs.fail()) {
     cerr << "File failed to open\n";
     exit(0);
   }
@@ -35,24 +37,16 @@ int main()
 		cout << "Enter the employee's salery: ";
 		cin >> salery;
 
-		// wrong operator, fix with >> 
-		ifs >> ID >> " ";
-		ifs >> name >> " ";
-		ifs >> dep >> " ";
-		ifs >> salery;
-    ifs >> endl;
-
-	// from line 22 to 39 
-	// must be repeated 
-	// How many times you want? 
-	// must be determined by "user input"
-	// if user says 5, we are going to make 5 iterations.
-
-    //I'll use a do for loop
-	// I think for-loop is better, becuase it has fixed number
+		ofs << ID << " ";
+		ofs << name << " ";
+		ofs << dep << " ";
+		ofs << salery << endl;
+		// need to write space between fields
+		
+		
     i++;
   }
-  ifs.close();
+  ofs.close();
   cout << "File written \n";
   return 0;
 }

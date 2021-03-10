@@ -9,7 +9,9 @@ int main()
 {
 
   ifstream ifs;
-  string fileLine;
+  string fileLine, name, dep;
+  int ID;
+  double salery, sum, average;
 
   ifs.open("employee.txt");
   if (ifs.fail()){
@@ -17,9 +19,12 @@ int main()
     exit(0);
   }
 
+
+  /**
   while (ifs >> fileLine){
     cout << fileLine << endl;
   }
+  **/
     
   ifs.close();
 

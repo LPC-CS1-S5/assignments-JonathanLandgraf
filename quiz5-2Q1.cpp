@@ -17,11 +17,11 @@ int main()
 
   cout << "The random numbers generated are: " << num1 << ", " << num2 << ", " << num3 << ", " << num4 << ", and " << num5 << endl;
 
-  if (num1 > num2 || num1 == num2){
-    min = num1;
+  if (num1 >= num2){
+    min = num2;
   }
   else {
-    min = num2;
+    min = num1;
   }
   if (min > num3){
     min = num3;

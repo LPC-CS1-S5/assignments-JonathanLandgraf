@@ -6,12 +6,19 @@ using namespace std;
 int main()
 {
   int n, m;
+  bool check = false;
+  //0 < n && n > 10 && 1 > m && m > 10
 
   do {
   cout << "Please enter in a number and the power (with a space between the inputs): ";
   cin >> n >> m;
   cout << endl;
-  } while (0 < n < 10 && 1 <= m <= 10);
+  if (n > 0 && n < 10){
+    if (m > 0 && m < 10){
+      check = true;
+    }
+  }
+  } while (check == false);
 
 
 

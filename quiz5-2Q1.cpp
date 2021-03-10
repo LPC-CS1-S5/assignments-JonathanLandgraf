@@ -6,9 +6,31 @@ using namespace std;
 
 int main()
 {
-  int num1, num2, num3, num4, num5, min;
+  int num, min;
   srand(time(0));  
 
+	// Use the loop structure to generate the Random number
+	// for ( ... ) {
+	//.    num = rand() % 100;
+	//     if ( min > num)
+	//         ....
+  // }
+cout << "The generated numbers are: ";
+for (int i=0; i < 5; i++) {
+  num = rand() % 100;
+  cout << num << ", ";
+  if (min > num){
+    min = num;
+  }
+}
+
+cout << "\nThe minimum value is " << min << endl;
+
+
+
+  /**
+  OLD LINES OF CODE
+  
   num1 = rand() % 100;
   num2 = rand() % 100;
   num3 = rand() % 100;
@@ -34,7 +56,8 @@ int main()
   }
   
   cout << "The minimum number is: " << min <<endl;
-
-
+  **/
+  
+  
   return 0;
 }

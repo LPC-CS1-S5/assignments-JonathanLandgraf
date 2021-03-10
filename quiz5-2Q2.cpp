@@ -5,7 +5,8 @@ using namespace std;
 
 int main()
 {
-  int n, m;
+  int n, m, power;
+  int i = 0;
   bool check = false;
   //0 < n && n > 10 && 1 > m && m > 10
 
@@ -20,7 +21,12 @@ int main()
   }
   } while (check == false);
 
-
+ // Check Q1.cpp. I left some comments 
+  while (i < m){
+    power = n * i;
+    cout << power << endl;
+    i++;
+  }
 
 
 

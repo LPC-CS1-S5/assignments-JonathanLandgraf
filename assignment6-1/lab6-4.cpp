@@ -10,6 +10,7 @@ int main()
 {
   int N, sum;
 
+
   do {
     cout << "Please enter the number of inputs: ";
     cin >> N;

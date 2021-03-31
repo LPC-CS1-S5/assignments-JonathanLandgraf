@@ -45,7 +45,7 @@ int main()
 int getRdnum()
 {
   int num;
-  num = rand() % 100;
+  num = rand() % 101;
   return num;
 }
 

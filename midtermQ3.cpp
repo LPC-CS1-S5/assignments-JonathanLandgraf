@@ -41,7 +41,7 @@ int main()
 int getRdnum()
 {
   int num;
-  num = rand() % 50;
+  num = rand() % 51;
   cout << num << endl;
   return num;
 }

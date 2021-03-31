@@ -32,7 +32,8 @@ int main()
     }
   }
 
-
+  ofs.close();
+  cout << "File written \n";
 
   return 0;
 }

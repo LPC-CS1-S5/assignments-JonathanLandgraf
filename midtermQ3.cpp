@@ -57,5 +57,6 @@ int isGreater(int num)
     return 1;
   }
   else
+    pre = num;
     return 0;
 }

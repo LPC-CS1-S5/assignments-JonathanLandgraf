@@ -14,22 +14,22 @@ int main()
   do{
     cout << "Enter 'i' for int numbers or 'f' for float: ";
     cin >> check;
-    if (check == "f" OR check == "F" OR check == "i" OR check == "I")
+    if (check == 'f' || check == 'F' || check == 'i' || check == 'I')
       break;
   } while(1);
 
-  if (check == "f" OR check == "F"){
+  if (check == 'f' || check == 'F'){
     cout << "Please enter two float numbers: ";
     cin >> f1 >> f2;
     swapTwoValues(f1, f2);
-        cout << f1 << "\t" << f2;
+    cout << f1 << "\t" << f2 << endl;
   }
   
   else{
     cout << "Please enter two integers: ";
     cin >> n1 >> n2;
     swapTwoValues(n1, n2);
-    cout << n1 << "\t" << n2;
+    cout << n1 << "\t" << n2 << endl;
   }
 
   return 0;
@@ -46,7 +46,7 @@ void swapTwoValues(int &n1, int &n2)
   return;
 }
 
-void swapTwoValues(int &f1, int &f2)
+void swapTwoValues(float &f1, float &f2)
 {
   float tmp;
   

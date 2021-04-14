@@ -13,10 +13,10 @@ int main()
 {
 
   srand(time(0));
-  int min;
+  int min, n1, n2, n3;
 
-  gerRandnum(int &n1, int &n2, int &n3);
-  min = findMin(int n1, int n2, int n3);
+  gerRandnum(n1, n2, n3);
+  min = findMin(n1, n2, n3);
   printResult(n1, n2, n3, min);
 
   return 0;
@@ -31,7 +31,7 @@ void gerRandnum(int &n1, int &n2, int &n3)
   return;
 }
 
-findMin(int num1, int num2, int num3)
+int findMin(int num1, int num2, int num3)
 {
   int min = num1;
 
@@ -42,7 +42,9 @@ findMin(int num1, int num2, int num3)
   return min;
 }
 
-printResult(n1, n2, n3, min)
+void printResult(int num1, int num2, int num3, int m)
 {
-  
+  cout << "The random numbers are: " << num1 << ", " << num2 << ", and " << num3 <<". \n";
+  cout << "The minimum is: " << m << endl;
+  return;
 }

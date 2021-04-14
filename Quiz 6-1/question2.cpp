@@ -48,3 +48,5 @@ void printResult(int num1, int num2, int num3, int m)
   cout << "The minimum is: " << m << endl;
   return;
 }
+
+//Quiz end

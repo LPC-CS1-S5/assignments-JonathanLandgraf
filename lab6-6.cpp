@@ -12,9 +12,11 @@ int main()
   cout << "Please enter the beginning and end ranges: ";
   cin >> begin >> end;
 
-  
-
-
+  for (int i, begin < i < end, i++){
+    while (int j, j < i, j++){
+      cout << "
+    }
+  }
 
 
   return 0;

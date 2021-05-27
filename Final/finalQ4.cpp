@@ -15,6 +15,7 @@ int main()
   char letters[] = words;
   char *stringPointer = nullptr;
   int count = 0;
+  int i = 0
 
   cout << "Enter user string "; 
   cin >> userinput;
@@ -27,7 +28,9 @@ int main()
       count += 1;
       cout << "Occurance found at " << stringPointer << endl;
     }
-  } while (int i = 0; i < lwords - 1 - luser; i++);
+  } while (i < lwords - 1 - luser; i++);
+
+  cout << "There were " << count << "total in the word passage." << endl;
 
   return 0;
 }

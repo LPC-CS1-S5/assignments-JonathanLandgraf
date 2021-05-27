@@ -13,15 +13,21 @@ int main()
   int lwords = strlen(words);
   int luser = strlen(userinput);
   char letters[] = words;
-  
+  char *stringPointer = nullptr;
+  int count = 0;
+
   cout << "Enter user string "; 
   cin >> userinput;
 
 
 
   do{
-    strstr
-  } while 
+    stringPointer = strstr (letters[i], userinput);
+    if (stringPointer != nullptr){
+      count += 1;
+      cout << "Occurance found at " << stringPointer << endl;
+    }
+  } while (int i = 0; i < lwords - 1 - luser; i++);
 
   return 0;
 }

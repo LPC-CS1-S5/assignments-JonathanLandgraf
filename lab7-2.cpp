@@ -28,7 +28,7 @@ int     main()
 
   return 0;
 }
-
+  t.end
 
 int     makearray(int   number[])
 {

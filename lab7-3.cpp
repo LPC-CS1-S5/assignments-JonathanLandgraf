@@ -21,6 +21,11 @@ int     main()
   int     number[SIZE];
   int     equal[SIZE];
   int     last;
+  int     ppc[4][4] {{10,30,20,40},
+                    {15,25,35,65},
+                    {13,21,9,42},
+                    {19,22,4,73}};
+
 
   last = makearray(number);
   printout(number, last);
@@ -30,6 +35,8 @@ int     main()
 
   sumfold(number, last);
   printout(number, ceil(last/2.0));
+
+  
 
   last = makearray(number);
   printout(number, last);
@@ -41,18 +48,24 @@ int     main()
 void    swapfold(int number[], int last) 
 {
   for(int i=0; i<last/2; i++) { 
-      swap(number[i], number[last-i-1]);
+    swap(number[i], number[last-i-1]);
   }
   // for(int i=0, j=last-1; i<j; i++, j--) {  // Works same. but use two variables.
   //  swap(number[i], number[j]);
   // }
+  for(int i=0; j=last-1; i++; j--){
+    swap(number[i], number[j]);
+  }
+  return;
 }
 void    sumfold(int number[], int last) //* 10 20 30 40
 {
   for(int i=0; i<last/2; i++) { 
     cout << number[i] << "\t";
     cout << number[last-i-1] << endl;
-  }   
+  }
+  return;
+  
 }
 void    equalfold(int number[], int equal[], int last)
 {

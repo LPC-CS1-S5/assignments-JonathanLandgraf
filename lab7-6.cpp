@@ -23,11 +23,13 @@ int     main()
     cout << "Enter the number to delete\n";
     cin >> usernum;
     deleteone(number, length, usernum);
-    printout(number, length);
+    printout(number, length);  
 }
 void    insertone(int number[], int &length, int usernum)
 {
-    
+  for (int i = 0; i < length; i++){
+    if 
+  }
 }
 void    deleteone(int number[], int &length, int usernum)
 {
